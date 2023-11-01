@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { AuthForm } from "./_components/AuthForm";
-
+  
 export default function Home() {
   return (
     <div className="bg-gray-100 h-screen w-screen items-center justify-center flex flex-col">

@@ -102,7 +102,7 @@ export const AuthForm = () => {
 
   async function onSubmitLogin(values: z.infer<typeof loginFormSchema>) {
     setIsSubmitting(true);
-    const loadingToast = toast.loading("sending information...", {
+    const loadingToast = toast.loading("Sending information...", {
       duration: 100000,
     });
     setIsSubmitting(true);
@@ -126,7 +126,7 @@ export const AuthForm = () => {
 
   async function onSubmitRegister(values: z.infer<typeof registerFormSchema>) {
     setIsSubmitting(true);
-    const loadingToast = toast.loading("sending information...", {
+    const loadingToast = toast.loading("Sending information...", {
       duration: 100000,
     });
     const promise = await fetch("/api/register", {
